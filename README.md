@@ -22,8 +22,12 @@ Parameters:
 Transformation
 -------------------------------
 
-``java -jar ../saxon9he.jar -xsl:../xsl/makeAletheia_mets -s:../example/example.xml imagefolder=jpg pagefolder=page``
+```sh
+java -jar ../saxon9he.jar -xsl:../xsl/makeAletheia_mets -s:../example/example.xml imagefolder=jpg pagefolder=page
+```
 
 Variante that no PAGE files can be specified or available:
 
-``java -jar ../saxon9he.jar -xsl:../xsl/makeAletheia_mets -s:../example/example.xml imagefolder=jpg pagefolder=page noPage=yes``
+```sh
+java -jar ../saxon9he.jar -xsl:../xsl/makeAletheia_mets -s:../example/example.xml imagefolder=jpg pagefolder=page noPage=yes
+```
