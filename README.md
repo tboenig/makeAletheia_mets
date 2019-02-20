@@ -14,12 +14,16 @@ Requirements for a METS file:
 
 Parameters:
 -------------
-- ``imagefile``name of the image file folder
-- ``pagefile    ``name of the PAGE file folder
+- ``imagefolder``name of the image file folder
+- ``pagefolder    ``name of the PAGE file folder
 - ``noIMAGE=yes``Indication that no image files can be specified, 
 - ``noPAGE=yes  ``Indication that no PAGE files can be specified or are available.
 
 Command line for transformation
 -------------------------------
 
-java
+``java -jar ../saxon9he.jar -xsl:../xsl/makeAletheia_mets -s:../example/example.xml imagefolder=jpg pagefolder=page``
+
+Variante that no PAGE files can be specified or available:
+
+``java -jar ../saxon9he.jar -xsl:../xsl/makeAletheia_mets -s:../example/example.xml imagefolder=jpg pagefolder=page noPage=yes``
