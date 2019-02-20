@@ -16,5 +16,5 @@ Parameters:
 -------------
 - ``imagefile ``name of the image file folder
 - ``pagefile  ``name of the PAGE file folder
-- ``noIMAGE=yes ``Indication that no image files can be specified, 
+- ``noIMAGE=yes``Indication that no image files can be specified, 
 - ``noPAGE=yes  ``Indication that no PAGE files can be specified or are available.
