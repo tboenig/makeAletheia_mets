@@ -10,3 +10,11 @@ Requirements for a METS file:
 - The files should be stored in relevant folders:
   -   e.g. the image files in the folder ``jpg``
   -   and the PAGE XML files in the folder ``page``
+
+
+Parameters:
+-------------
+``imagefile - name of the image file folder
+``pagefile`` - name of the PAGE file folder
+``noIMAGE=yes`` Indication that no image files can be specified, 
+``noPAGE=yes`` Indication that no PAGE files can be specified or are available.
