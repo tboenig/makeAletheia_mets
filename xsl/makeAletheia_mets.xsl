@@ -9,6 +9,8 @@
     
     <xsl:param name="imagefile"/>
     <xsl:param name="pagefile"/>
+    <xsl:param name="noIMAGE"/>
+    <xsl:param name="noPAGE"/>
     
     
     
