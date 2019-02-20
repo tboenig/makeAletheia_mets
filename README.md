@@ -19,7 +19,7 @@ Parameters:
 - ``noIMAGE=yes``Indication that no image files can be specified, 
 - ``noPAGE=yes  ``Indication that no PAGE files can be specified or are available.
 
-Command line for transformation
+Transformation
 -------------------------------
 
 ``java -jar ../saxon9he.jar -xsl:../xsl/makeAletheia_mets -s:../example/example.xml imagefolder=jpg pagefolder=page``
