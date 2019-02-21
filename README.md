@@ -1,7 +1,7 @@
 # makeAletheia_mets
 
 Build a Mets file (Page Collections file) to easily work with Aletheia.  
-See: [Page Collections](https://www.primaresearch.org/www/assets/tools/Aletheia%20User%20Guide.pdf#page=123) in the Aletheia User Guide
+**See:** [Page Collections](https://www.primaresearch.org/www/assets/tools/Aletheia%20User%20Guide.pdf#page=123) in the Aletheia User Guide
 
 Requirements for a METS file
 ------------
@@ -24,7 +24,7 @@ The File
 -------------
 
 The ``link`` element contains the path to the ``image`` or ``PAGE`` file.  
-Note: See the example file in the example folder. Use only a slash for seperating the folders, dont use a backslash also when you use the Windows OS.
+**Note:** See the example file in the example folder. Use only a slash for seperating the folders, dont use a backslash also when you use the Windows OS.
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
