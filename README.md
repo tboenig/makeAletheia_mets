@@ -29,7 +29,7 @@ Note: See the example file in the example folder. Use only a slash for seperatin
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <gt>
-    <link>Path to the Image or PAGE file/Name of the File without Extension</link>
+    <link>[Path to the Image or PAGE file]/[Name of the File without Extension]</link>
 </gt>
 
 ```
