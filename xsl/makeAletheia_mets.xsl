@@ -7,8 +7,8 @@
     exclude-result-prefixes="xs"
     version="2.0">
     
-    <xsl:param name="imagefile"/>
-    <xsl:param name="pagefile"/>
+    <xsl:param name="imagefolder"/>
+    <xsl:param name="pagefolder"/>
     <xsl:param name="noIMAGE"/>
     <xsl:param name="noPAGE"/>
     
@@ -61,7 +61,7 @@
             <FLocat xlink:type="simple" LOCTYPE="URL">
                 <xsl:variable name="test"><xsl:apply-templates/></xsl:variable>
                 <xsl:message select="$test"></xsl:message>
-                <xsl:attribute name="xlink:href"><xsl:value-of select="replace($test, $imagefile, $pagefile)"/>.xml</xsl:attribute>
+                <xsl:attribute name="xlink:href"><xsl:value-of select="replace($test, $imagePath, $pagePath)"/>.xml</xsl:attribute>
                 <!--<xsl:attribute name="xlink:href"><xsl:apply-templates/>.xml</xsl:attribute>-->
             </FLocat>
         </xsl:element>
