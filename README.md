@@ -23,7 +23,7 @@ Parameters
 The File
 -------------
 
-The ``link`` element contains the path to the ``image`` or ``PAGE`` file.
+The ``link`` element contains the path to the ``image`` or ``PAGE`` file.  
 Note: See the example file in the example folder. Use only a slash for seperating the folders, dont use a backslash also when you use the Windows OS.
 
 ```
