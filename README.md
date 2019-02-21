@@ -2,7 +2,7 @@
 
 Build a Mets file (Page Collections file) to easily work with Aletheia.
 
-Requirements for a METS file:
+Requirements for a METS file
 ------------
 - Name of the image file (with file path).
 - If available the matching PAGE XML file.
@@ -12,12 +12,21 @@ Requirements for a METS file:
   -   and the PAGE XML files in the folder ``page``
 
 
-Parameters:
+Parameters
 -------------
 - ``imagefolder``name of the image file folder
 - ``pagefolder    ``name of the PAGE file folder
 - ``noIMAGE=yes``Indication that no image files can be specified, 
 - ``noPAGE=yes  ``Indication that no PAGE files can be specified or are available.
+
+The File
+-------------
+
+The ``link`` element contains the path to the ``image`` file or ``PAGE`` file.
+Note: See the example file in the example folder. Use only a slash for seperating the folders, dont use a backslash also when you use the Windows OS.
+
+
+
 
 Transformation
 -------------------------------
