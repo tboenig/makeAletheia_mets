@@ -1,7 +1,7 @@
 # makeAletheia_mets
 
 Build a Mets file (Page Collections file) to easily work with Aletheia.  
-See: https://www.primaresearch.org/www/assets/tools/Aletheia%20User%20Guide.pdf#page=123
+See: <https://www.primaresearch.org/www/assets/tools/Aletheia%20User%20Guide.pdf#page=123>Page Collections<>
 
 Requirements for a METS file
 ------------
