@@ -45,5 +45,5 @@ java -jar ../saxon9he.jar -xsl:../xsl/makeAletheia_mets -s:../example/example.xm
 A variante that no PAGE files can be specified or available:
 
 ```sh
-java -jar ../saxon9he.jar -xsl:../xsl/makeAletheia_mets -s:../example/example.xml imagefolder=jpg pagefolder=page noPage=yes
+java -jar ../saxon9he.jar -xsl:../xsl/makeAletheia_mets -s:../example/example.xml imagefolder=jpg noPage=yes
 ```
