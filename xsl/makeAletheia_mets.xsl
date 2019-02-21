@@ -21,14 +21,31 @@
         xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version18/mets.xsd">
         <metsHdr CREATEDATE="2019-02-20T10:10:14" LASTMODDATE="2019-02-20T10:10:14"/>
         <fileSec>
-            <fileGrp USE="PageContent">
-                <xsl:apply-templates mode="Link1"/>
-            </fileGrp>
+            <xsl:choose>
+                <xsl:when test="$noPAGE = 'yes'">
+                    <fileGrp USE="PageContent"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <fileGrp USE="PageContent">
+                        <xsl:apply-templates mode="Link1"/>
+                    </fileGrp>
+                </xsl:otherwise>
+            </xsl:choose>
+            
+            
             <fileGrp USE="Binary"/>
            
-            <fileGrp USE="Master">
-                <xsl:apply-templates mode="Link2" />
-            </fileGrp>
+            <xsl:choose>
+                <xsl:when test="$noIMAGE = 'yes'">
+                    <fileGrp USE="Master"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <fileGrp USE="Master">
+                        <xsl:apply-templates mode="Link2" />
+                    </fileGrp>
+                </xsl:otherwise>
+            </xsl:choose>
+            
         </fileSec>
         <structMap TYPE="physical">
             <div TYPE="sequence">
@@ -65,8 +82,15 @@
                   <xsl:attribute name="ID">physical.<xsl:number level="single" count="link" format="1"/></xsl:attribute>
                   <xsl:attribute name="TYPE">page</xsl:attribute>
                   <xsl:attribute name="ORDER"><xsl:number level="single" count="link" format="1"/></xsl:attribute>
-                  <fptr><xsl:attribute name="FILEID">Master.<xsl:number level="single" count="link" format="1"/></xsl:attribute></fptr>
-                  <fptr><xsl:attribute name="FILEID">PageContent.<xsl:number level="single" count="link" format="1"/></xsl:attribute></fptr>
+                  <xsl:choose>
+                      <xsl:when test="$noIMAGE = 'yes'"/>
+                      <xsl:otherwise><fptr><xsl:attribute name="FILEID">Master.<xsl:number level="single" count="link" format="1"/></xsl:attribute></fptr></xsl:otherwise>
+                  </xsl:choose>
+                  <xsl:choose>
+                      <xsl:when test="$noPAGE = 'yes'"/>
+                      <xsl:otherwise><fptr><xsl:attribute name="FILEID">PageContent.<xsl:number level="single" count="link" format="1"/></xsl:attribute></fptr></xsl:otherwise>
+                  </xsl:choose>
+                       
               </div>
   </xsl:template>  
     
