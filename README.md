@@ -17,6 +17,7 @@ Parameters
 -------------
 - ``imagefolder``name of the image file folder
 - ``pagefolder    ``name of the PAGE file folder
+- ``imageFormat    ``Format of image files  
 - ``noIMAGE=yes``Indication that no image files can be specified, 
 - ``noPAGE=yes  ``Indication that no PAGE files can be specified or are available.
 
