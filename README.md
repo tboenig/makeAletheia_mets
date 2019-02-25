@@ -40,11 +40,11 @@ Transformation
 -------------------------------
 
 ```sh
-java -jar ../saxon9he.jar -xsl:../xsl/makeAletheia_mets -s:../example/example.xml imagefolder=jpg pagefolder=page
+java -jar ../saxon9he.jar -xsl:../xsl/makeAletheia_mets -s:../example/example.xml imagefolder=jpg imageFormat=jpg pagefolder=page
 ```
 
 A variante that no PAGE files can be specified or available:
 
 ```sh
-java -jar ../saxon9he.jar -xsl:../xsl/makeAletheia_mets -s:../example/example.xml imagefolder=jpg noPage=yes
+java -jar ../saxon9he.jar -xsl:../xsl/makeAletheia_mets -s:../example/example.xml imagefolder=tiff imageFormat=tif noPage=yes
 ```
