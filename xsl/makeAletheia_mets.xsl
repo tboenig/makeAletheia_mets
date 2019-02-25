@@ -9,6 +9,7 @@
     
     <xsl:param name="imagefolder"/>
     <xsl:param name="pagefolder"/>
+    <xsl:param name="imageFormat"/>
     <xsl:param name="noIMAGE"/>
     <xsl:param name="noPAGE"/>
     
@@ -61,7 +62,7 @@
             <FLocat xlink:type="simple" LOCTYPE="URL">
                 <xsl:variable name="test"><xsl:apply-templates/></xsl:variable>
                 <xsl:message select="$test"></xsl:message>
-                <xsl:attribute name="xlink:href"><xsl:value-of select="replace($test, $imagePath, $pagePath)"/>.xml</xsl:attribute>
+                <xsl:attribute name="xlink:href"><xsl:value-of select="replace($test, $imagefolder, $pagefolder)"/>.xml</xsl:attribute>
                 <!--<xsl:attribute name="xlink:href"><xsl:apply-templates/>.xml</xsl:attribute>-->
             </FLocat>
         </xsl:element>
@@ -71,7 +72,7 @@
         <file>
             <xsl:attribute name="ID">Master.<xsl:number level="single" count="link" format="1"/></xsl:attribute>
             <FLocat xlink:type="simple" LOCTYPE="URL">
-                <xsl:attribute name="xlink:href"><xsl:apply-templates/>.jpg</xsl:attribute>
+                <xsl:attribute name="xlink:href"><xsl:apply-templates/>.<xsl:value-of select="$imageFormat"/></xsl:attribute>
             </FLocat>
         </file>
     </xsl:template>
