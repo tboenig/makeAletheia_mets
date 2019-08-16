@@ -1,11 +1,12 @@
 # makeAletheia_mets
 
 Build a Mets file (Page Collections file) to easily work with Aletheia.  
-**See:** [Page Collections](https://www.primaresearch.org/www/assets/tools/Aletheia%20User%20Guide.pdf#page=123) in the Aletheia User Guide
+**See:** [Page Collections](https://www.primaresearch.org/www/assets/tools/Aletheia%20User%20Guide.pdf#page=123) in the Aletheia User Guide.
+You can also use the METS file for the OCR-D framework (https://github.com/OCR-D/core).
 
 Requirements for a METS file
 ------------
-- Name of the image file (with file path).
+- Name and path of the image file (without file extension).
 - If available the matching PAGE XML file.
 - Both files should have the same name and only differ in their file extension.
 - The files should be stored in relevant folders:
@@ -19,7 +20,8 @@ Parameters
 - ``pagefolder    ``name of the PAGE file folder
 - ``imageFormat``Format of image files  
 - ``noIMAGE=yes``Indication that no image files can be specified, 
-- ``noPAGE=yes  ``Indication that no PAGE files can be specified or are available.
+- ``noPAGE=yes  ``Indication that no PAGE files can be specified or are available
+- ``drive             ``The drive letter from windows file system.
 
 The File
 -------------
