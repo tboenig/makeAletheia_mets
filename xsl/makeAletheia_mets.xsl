@@ -66,7 +66,7 @@
             <FLocat xlink:type="simple" LOCTYPE="URL">
                 <xsl:variable name="path"><xsl:apply-templates/></xsl:variable>
                 <xsl:message select="$path"></xsl:message>
-                <xsl:attribute name="xlink:href"><xsl:value-of select="replace(replace($path, $imagefolder, $pagefolder), '/home/dta', $drive) "/>.jpg.xml</xsl:attribute>
+                <xsl:attribute name="xlink:href"><xsl:value-of select="replace(replace($path, $imagefolder, $pagefolder), '/home/dta', $drive) "/>.xml</xsl:attribute>
                 
             </FLocat>
         </xsl:element>
